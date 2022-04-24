@@ -10,8 +10,13 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        writeDataInFile(SDes.encrypt(readDataFromFile(), 123));
-//        writeDataInFile(SDes.decrypt(readDataFromFile(), 123));
+//        writeDataInFile(SDes.encrypt(readDataFromFile(), 222));
+//        writeDataInFile(SDes.decrypt(readDataFromFile(),222));
+
+        String without = String.format("%2s", Integer.toBinaryString(1));
+        System.out.println(without);
+        String with = String.format("%2s", Integer.toBinaryString(1)).replace(" ", "0");
+        System.out.println(with);
     }
 
     public static String readDataFromFile() throws IOException {

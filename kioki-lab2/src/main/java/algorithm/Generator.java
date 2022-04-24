@@ -11,6 +11,7 @@ public class Generator {
         System.out.println(Integer.toBinaryString(k));
         System.out.println(Integer.toBinaryString((1 << 10) - 1));
         String key10 = String.format("%10s", Integer.toBinaryString(k & ((1 << 10) - 1))).replace(' ', '0');
+        System.out.println(Integer.toBinaryString(k & ((1 << 10) - 1)));
 
         //permute using p10
         String p10Permute = permute(key10, p10);
